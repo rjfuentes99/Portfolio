@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="icon" href="img/perfil.webp" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="container-header">
+        <header class="header">
+            <div class="logo">
+                <a href="#sobremi">Ricardo</a>
+            </div>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"  onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum"  onclick="seleccionar()">TRAYECTORIA</a></li>
+                    <li><a href="#portafolio"  onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+
+            <a onclick="openNav()" class="menu" href="#">Menu</a>
+
+            <div class="overlay" id="mobile-menu">
+                <a href="" onclick="closeNav()" class="close">&times;</a>
+                <div class="overlay-content">
+                        <a href="#inicio" onclick="seleccionar()">INICIO</a>
+                        <a href="#sobremi"  onclick="seleccionar()">SOBRE MI</a>
+                        <a href="#curriculum"  onclick="seleccionar()">TRAYECTORIA</a>
+                        <a href="#portafolio"  onclick="seleccionar()">PORTAFOLIO</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--SECCION INICIO-->
+    
+    <section id="inicio" class="inicio">
+        <div class="overlay"></div>
+        <div class="contenido-banner">
+            <div class="container-img">
+                <img src="img/fotoperfil.png" alt="perfil">
+            </div>
+            <h1>Ricardo Fuentes</h1>
+            <h2>Desarrollador Full-Stack Java</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/ricardo-fuenteswb/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/rjfuentes99"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hey!!. Mi nombre es Ricardo Fuentes </span>Desarrollador Full Stack especializado en Java, enfocado en el desarrollo de aplicaciones web con sólida experiencia en análisis de datos. Combino habilidades técnicas avanzadas con excelentes habilidades sociales para crear soluciones eficientes y colaborativas. Mi capacidad para comunicarme eficazmente, trabajar en equipo y resolver problemas complejos me permite contribuir significativamente al éxito de los proyectos. Además, mi enfoque proactivo y orientado a resultados garantiza la mejora continua y la innovación en cada tarea.</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            08-04-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            923891818
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            rjose.fmarin99@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador Freelancer</span>
+                            <!--<span></span>-->
+                        </li>
+                    </ul>
+                </div>
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>CODEAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>Basket</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="descargarCV()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+        </div>
+    </section>
+    <!--SECCIÓN SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--habilidades técnicas-->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span><i class="fa-regular fa-file-code"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span><i class="fa-brands fa-node-js fa-fade"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span><i class="fa-solid fa-database fa-fade"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA / Spring Boot</span>
+                        <div class="barra-skill">
+                            <div class="progreso javaspring">
+                                <span><i class="fa-brands fa-java fa-fade"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Bootstrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso bootstrap">
+                                <span><i class="fa-brands fa-bootstrap fa-fade"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso react">
+                                <span><i class="fa-brands fa-react fa-fade"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación efectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span><i class="fa-regular fa-comment"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajoequipo">
+                                <span><i class="fa-solid fa-user-group"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de conflictos</span>
+                        <div class="barra-skill">
+                            <div class="progreso resolucion">
+                                <span><i class="fa-solid fa-hand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pensamiento crítico</span>
+                        <div class="barra-skill">
+                            <div class="progreso pensamiento">
+                                <span><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad de Análisis</span>
+                        <div class="barra-skill">
+                            <div class="progreso analisis">
+                                <span><i class="fa-solid fa-question"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso liderazgo">
+                                <span><i class="fa-solid fa-handshake"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Toma Decisiones</span>
+                        <div class="barra-skill">
+                            <div class="progreso decisiones">
+                                <span><i class="fa-solid fa-network-wired"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptación</span>
+                        <div class="barra-skill">
+                            <div class="progreso adaptacion">
+                                <span><i class="fa-brands fa-fly"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Trayectoria</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de habilidades blandas</h4>
+                        <span class="casa">Fundación Forge</span>
+                        <span class="fecha"> Octubre 2023 | Enero 2024</span>
+                        <p>
+                            Estoy participando en un curso intensivo de oratoria y comunicación efectiva. Enfocado en desarrollar habilidades clave como la estructura del discurso, manejo de la voz y adaptación al público. Destaco la práctica intensiva con sesiones de retroalimentación detallada para fortalecer áreas de mejora. Este curso no solo mejora mis habilidades de presentación profesional, sino que también enriquece mi comunicación diaria. Espero aplicar estas habilidades para fortalecer la efectividad en situaciones laborales y personales.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo FRONT-END Con Javascript</h4>
+                        <span class="casa">Coding Dojo</span>
+                        <span class="fecha">Octubre 2023 | Noviembre 2023</span>
+                        <p>
+                            Participé activamente en un curso intensivo que abordó la creación integral de páginas y aplicaciones web desde cero, utilizando HTML, CSS y JavaScript. Durante el programa, adquirí conocimientos sólidos en el uso de estas tecnologías, aplicándolas a proyectos que variaban desde páginas simples hasta aplicaciones complejas de lado servidor-usuario. Profundicé mis habilidades al aprender Node.js y React, fortaleciendo mi capacidad para desarrollar soluciones web dinámicas y escalables. Este curso me equipó con las habilidades esenciales para afrontar proyectos de desarrollo web de extremo a extremo, consolidando mi experiencia como desarrollador Full Stack. 
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo FULL-STACK Con Java</h4>
+                        <span class="casa">Coding Dojo</span>
+                        <span class="fecha">OCTUBRE 2022 | FEBRERO 2023</span>
+                        <p>
+                            Completé con éxito un curso integral de Desarrollo Full Stack Java, destacando en tecnologías backend, especialmente Java Spring-Boot para el consumo y desarrollo de APIs. En el frontend, adquirí habilidades en HTML, CSS con enfoque en Responsive Design, y JavaScript. Además, obtuve valiosa experiencia en el manejo y modelado de Bases de Datos relacionales, con énfasis en MySQL. Este curso, impartido por Coding Dojo en colaboración con Accenture y Forge, ha enriquecido mi conjunto de habilidades en el desarrollo web integral. 
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Web</h4>
+                        <span class="casa">Sofka U</span>
+                        <span class="fecha">Abril 2022 | Mayo 2022</span>
+                        <p>
+                            Completé con éxito un curso integral donde creé páginas y aplicaciones desde cero utilizando HTML, CSS y JavaScript. Aprendí las funciones fundamentales de cada lenguaje y las apliqué en proyectos diversos, desde páginas simples hasta aplicaciones de lado servidor-usuario. También adquirí habilidades avanzadas al explorar Node.js y MySQL, permitiéndome desarrollar soluciones web dinámicas y escalables. Este curso me equipó con las habilidades esenciales para abordar proyectos de desarrollo web de extremo a extremo. 
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+
+
+                    <!--<div class="item der">
+                        <h4>Analista Desarrollador</h4>
+                        <span class="casa">Vr Group Consulting</span>
+                        <span class="fecha">Febrero 2024 | Actualmente</span>
+                        <p>
+                            Dirigí la creación de plantillas eficientes con Inspire Designer, mejorando significativamente la presentación en las comunicaciones del proyecto Aconcagua. Desarrollé y gestioné una parte vital del servicio de comunicaciones, empleando Java Spring Boot y Oracle 19c para garantizar un rendimiento óptimo. Colaboré estrechamente con equipos interdisciplinarios, alineando soluciones tecnológicas con objetivos comerciales. Utilicé GitLab para la gestión eficaz de repositorios y contribuí activamente a la mejora continua mediante la identificación proactiva de problemas, asegurando la estabilidad del sistema. Mantuve un alto nivel de precisión y cumplimiento de plazos, garantizando la satisfacción del cliente en el proyecto Aconcagua.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>-->
+
+                    <div class="item der">
+                        <h4>Software Developer</h4>
+                        <span class="casa">Accenture Chile</span>
+                        <span class="fecha">Junio 2023 | Junio 2024</span>
+                        <p>
+                            Utilicé los marcos Java, Mulesoft y Spring para desarrollar e integrar aplicaciones de nivel empresarial, mejorando la eficiencia y el rendimiento general del sistema.<br>
+
+                            Empleé Git para el control de versiones, lo que garantiza una colaboración fluida y un seguimiento de los cambios de código durante todo el proceso de desarrollo.<br>
+                            
+                            Aprovechó SQL Server para la gestión de bases de datos, incluida la consulta, manipulación y optimización de datos.<br>
+                            
+                            Utilicé Excel ampliamente para generar informes detallados y realizar análisis de datos en profundidad, proporcionando información valiosa para los procesos de toma de decisiones.<br>
+                            
+                            Experiencia aplicada en programación lógica para resolver desafíos de integración complejos, garantizando una comunicación perfecta entre varios sistemas y plataformas.<br>
+                            
+                            Colaboré con equipos multifuncionales para diseñar e implementar soluciones innovadoras, contribuyendo al éxito de la empresa en la entrega de productos y servicios de alta calidad a los clientes..<br>
+                            
+                            Contribución a la mejora continua mediante la identificación proactiva de problemas y aplicación de soluciones eficientes, garantizando la estabilidad del sistema.<br>
+                
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Full-Stack</h4>
+                        <span class="casa">Coding Dojo(FindMyVet)</span>
+                        <span class="fecha">Enero 2023 | Febrero 2023</span>
+                        <p>Lideré la creación del backend utilizando Java Spring Boot (versión 1.8) y WebLogic. <br>
+
+                            Diseñé y desarrollé servicios REST para garantizar la eficiencia y escalabilidad del sistema.<br>
+                            
+                            Colaboré activamente en el diseño y desarrollo de interfaces de usuario innovadoras utilizando React.js.<br>
+                            
+                            Garanticé una integración fluida entre el frontend y el backend, optimizando la experiencia del usuario.<br>
+                            
+                            Utilicé tecnologías clave como Spring MVC WorkFlow, JavaScript y HTML para implementar estrategias de diseño web efectivas.<br>
+                            
+                            Aplicación de Maven para la gestión de dependencias, Hibernate para el mapeo objeto-relacional y WebLogic para la implementación, mejorando la eficiencia del desarrollo.<br>
+                            
+                            Lideré un equipo de desarrolladores, asegurando la alineación con los objetivos del proyecto y la entrega oportuna de hitos.<br>
+                            
+                            Colaboré estrechamente con los miembros del equipo para garantizar la coherencia y calidad en todas las fases del proyecto.<br>
+                            
+                            Supervisé la implementación de MySQL y WebLogic para el manejo eficiente de la base de datos y la implementación del servidor, priorizando la seguridad y la integridad de los datos.<br>
+                            
+                            Realicé pruebas exhaustivas para garantizar un rendimiento óptimo y la resolución proactiva de posibles problemas. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION PROYECTOS-->
+    <div id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <div class="overlay">
+                        <h3>E-commerce Clinica Dental</h3>
+                        <p>Desarrollo frontend HTML/CSS/JS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>E-commerce</h3>
+                        <p>Desarrollo HTML/CSS/JS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.png" alt="">
+                    <div class="overlay">
+                        <h3>FindMyPet</h3>
+                        <p>Desarrollo con Java/Spring Boot/HTML/CSS/JS</p>
+                    </div>
+                </div>
+                <!--<div class="proyecto">
+                    <img src="img/p8.png" alt="">
+                    <div class="overlay">
+                        <h3>Pronostico del clima</h3>
+                        <p>Desarrollo con React</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p9.png" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora Básica</h3>
+                        <p>Desarrollo con Java</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p10.png" alt="">
+                    <div class="overlay">
+                        <h3>Lista de Tareas</h3>
+                        <p>Desarrollo con React/Django Rest</p>
+                    </div>
+                </div>-->
+                
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/rjfuentes99" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ricardo-fuenteswb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/+56923891818" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:rjose.fmarin99@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="/JS/script.js"></script>
+</body>
+</html>
