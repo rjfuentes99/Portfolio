@@ -242,7 +242,6 @@ header a{
     align-items: center;
 }
 .overlay{
-    height: 870px;
     position: absolute;
     top: 70px;
     bottom: 0;
