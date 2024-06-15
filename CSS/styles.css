@@ -312,7 +312,7 @@ header a{
 }
 
 .sobremi h2 {
-    color: var( --color-highlight-dark);
+    color: var( --color-background-light);
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
